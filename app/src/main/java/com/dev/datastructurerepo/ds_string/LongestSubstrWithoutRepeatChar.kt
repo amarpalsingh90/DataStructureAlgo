@@ -1,9 +1,10 @@
 package com.dev.datastructurerepo.ds_string
 
 import kotlin.math.max
+//https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 
 fun main() {
-    val inputStr = "abcdeabcbb"
+    val inputStr = "eabcdeeeeeeabcbb"
     val output = lengthOfLongestSubstring(inputStr)
     println("max Length str: $output")
 }

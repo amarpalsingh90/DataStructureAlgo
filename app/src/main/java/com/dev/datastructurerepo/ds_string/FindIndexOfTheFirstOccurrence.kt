@@ -1,7 +1,7 @@
 package com.dev.datastructurerepo.ds_string
 
 fun main(){
-    val input= "I am Sad"
+    val input= "I am happy but Sad"
     val needle = "Sad"
     val output= findTheFirstIndexOfTheOcc(input, needle)
     println("First Index: $output")

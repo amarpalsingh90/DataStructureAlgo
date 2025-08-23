@@ -12,6 +12,7 @@ public class CheckCharacterCount {
 
     public static String getCharacterCount() {
         String str1 = "abcdABCDabcd";
+
         char[] chars = str1.toCharArray();
         Map<Character, Integer> charsCount = new HashMap<>();
         for (char c: chars) {

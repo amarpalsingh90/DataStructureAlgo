@@ -6,8 +6,6 @@ fun main (){
     val sumOfTheNumbers2= addTwoNumber(a =10, b =30, sum = {a,b-> a+b})
     val sumOfTheNumbers3= addTwoNumber(a =10, b =64, sum = {a,b-> a+b})
     println("$sumOfTheNumbers   $sumOfTheNumbers2    $sumOfTheNumbers3")
-
-
 }
 
 
