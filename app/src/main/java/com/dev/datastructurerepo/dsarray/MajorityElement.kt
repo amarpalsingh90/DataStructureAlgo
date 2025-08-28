@@ -8,11 +8,11 @@ fun main(){
 fun findMajorityElement(nums: IntArray) : Int{
     var candidate=0
     var count =0
-    for (i in nums.indices){
+    for (i in nums){
         if(count==0){
-            candidate= nums[i]
+            candidate = i
         }
-        if(candidate==nums[i]){
+        if(candidate==i){
             count++
         }else {
             count--

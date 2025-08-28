@@ -1,6 +1,7 @@
 package com.dev.datastructurerepo.advancekotlin
 
-import java.util.Collections
+import java.util.*
+import  java.util.Map.*
 
 fun main(){
     val dataMap: MutableMap<String, Int> = mutableMapOf()
@@ -13,7 +14,7 @@ fun main(){
 
     val secondLargestValue = dataMap.entries
         .stream()
-        .sorted(Collections.reverseOrder<Map.Entry<String, Int>>(java.util.Map.Entry.comparingByValue<String, Int>()))
+        .sorted(Collections.reverseOrder(Entry.comparingByValue()))
         .skip(1)
         .findFirst()
         .get()
