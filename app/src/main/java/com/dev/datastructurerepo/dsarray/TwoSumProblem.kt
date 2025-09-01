@@ -26,15 +26,20 @@ fun findPairIndexToTarget(target: Int, inputArray: IntArray): IntArray? {
     return null
 }
 
-fun findPairIndexUsingTwoPointer(inpurArray: IntArray, target: Int): IntArray? {
-    val sortedArray = inpurArray.sortedArray()
-    var leftPtr = 0
-    var rightPtr = sortedArray.size - 1
+fun findPairIndexUsingTwoPointer(inputArray: IntArray, target: Int): IntArray? {
 
+    val map=mutableMapOf<Int, Int>()
+    for (i in inputArray.indices) {
+         map[inputArray[i]] = i
+    }
+    Arrays.sort(inputArray)
+    println(inputArray.toList())
+    var leftPtr = 0
+    var rightPtr = inputArray.size - 1
     while (leftPtr < rightPtr) {
-        val sum = sortedArray[leftPtr] + sortedArray[rightPtr]
+        val sum = inputArray[leftPtr] + inputArray[rightPtr]
         if (sum == target) {
-            return intArrayOf(leftPtr, rightPtr)
+            return intArrayOf(map[inputArray[leftPtr]]!!, map[inputArray[rightPtr]]!!)
         } else if (sum < target) {
             leftPtr++
         } else {
