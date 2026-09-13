@@ -1,7 +1,7 @@
 package com.dev.datastructurerepo.dsarray
 
 fun main(){
-    val intArray:IntArray= intArrayOf(1,0,5,7,0,0,9,7,0,0,0,0,10)
+    val intArray:IntArray= intArrayOf(1,0,5,7,0,0,9,7,0,0,0,0,9,8,10)
     val output= moveZeroes(intArray)
     println(output.toList().toString())
 }

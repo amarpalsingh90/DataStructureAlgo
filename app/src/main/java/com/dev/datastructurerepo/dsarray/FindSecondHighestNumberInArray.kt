@@ -3,7 +3,7 @@ package com.dev.datastructurerepo.dsarray
 import java.util.Comparator
 
 fun main() {
-    val list:List<Int> = arrayListOf(12, 24, 30, 44, 89, 5, 7)
+    val list:List<Int> = arrayListOf(12, 24, 30, 44, 89, 115, 7)
     println(findSecondHighest(list))
 }
 

@@ -1,7 +1,7 @@
 package com.dev.datastructurerepo.dsarray
 
 fun main(){
-   val output= findMajorityElement(intArrayOf(3,3,2,2,2,2,1,1,1,1,1,1,2,3))
+   val output= findMajorityElement(intArrayOf(3,3,2,2,22,2,2,2,2,2,2,2,1,1,1,1,1,1,2,3))
     println("majority element== $output" )
 }
 

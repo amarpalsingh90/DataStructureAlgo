@@ -36,7 +36,7 @@ fun findPairIndexUsingTwoPointer(inputArray: IntArray, target: Int): IntArray? {
     println(inputArray.toList())
     var leftPtr = 0
     var rightPtr = inputArray.size - 1
-    while (leftPtr < rightPtr) {
+    while (leftPtr < rightPtr) {  
         val sum = inputArray[leftPtr] + inputArray[rightPtr]
         if (sum == target) {
             return intArrayOf(map[inputArray[leftPtr]]!!, map[inputArray[rightPtr]]!!)
